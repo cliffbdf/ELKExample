@@ -1,6 +1,8 @@
+import jenkins.model.*
+jenkins = Jenkins.instance
 node {
 	def application = "springbootapp"
-	def dockerhubaccountid = "siraj21"
+	def dockerhubaccountid = "cliffberg"
 	stage('Clone repository') {
 		checkout scm
 	}
